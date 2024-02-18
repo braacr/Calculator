@@ -1,2 +1,2 @@
-# Stopwatch
- Simple Stopwatch (HTML,CSS,JS)
+# Calculator
+ Simple Calculator (HTML,CSS,JS)
