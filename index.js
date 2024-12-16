@@ -1,17 +1,28 @@
 const display = document.getElementById("display");
+const keys = document.getElementById("keys");
+const clearButton = document.getElementById("clear");
+const equalsButton = document.getElementById("equals");
 
-function appendToDisplay(input) {
-    display.value += input;
-};
+keys.addEventListener("click", (event) => {
+    const { value } = event.target.dataset;
+    if (!value) return;
+    display.value += value;
+});
 
-function clearDisplay() {
+clearButton.addEventListener("click", () => {
     display.value = "";
-};
+});
 
-function calculate() {
+equalsButton.addEventListener("click", () => {
     try {
-        display.value = eval(display.value);
+        const result = eval(display.value);
+        display.value = formatNumber(result);
     } catch(error) {
         display.value = "Error";
     }
-};
+});
+
+function formatNumber(number) {
+    if(isNaN(number)) return "Error";
+    return number.toLocaleString("en-US");
+}
