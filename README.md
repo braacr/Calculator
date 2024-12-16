@@ -23,3 +23,5 @@ This is a modern and responsive calculator webiste with a clean and user-friendl
 2. Click the buttons to input numbers and operations.
 3. Press `=` to calculate the result.
 4. Use `C` to clear the display.
+
+![{F7ED0130-D8D1-4A3E-AD88-1B9AEFE7B907}](https://github.com/user-attachments/assets/041dd57b-65cd-40d3-b58c-49a96acc9d04)
